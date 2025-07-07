@@ -7,6 +7,7 @@ const tasks = ["Write a diary entry from the future", "Create a time machine fro
 app.use(express.json());
 app.get("/", (req, res) => {
     res.send("Hello World");
+    
 });
 
 app.post("/tasks", (req, res) => {
