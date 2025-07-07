@@ -30,10 +30,23 @@ To run the FastAPI server using Docker, follow these steps:
 
 - The FastAPI server should now be running. You can access at port `8000`.
 
-## API Routes
-
 The FastAPI server provides the following API routes:
 
 - `POST /tasks`: Adds a task to the task list. The request body should contain the task details.
 
 - `GET /tasks`: Retrieves the task list.
+
+## Migration to Node.js Server
+
+We have migrated the backend server from Python (FastAPI) to Node.js using Express. The new implementation provides the same API routes for managing the task list, ensuring a seamless transition for existing clients.
+
+### Migration Details
+
+- The server code now resides in `node-server/src/index.js`.
+- Dependencies are managed via `node-server/package.json`.
+- The Docker setup and `docker-compose.yml` have been updated to use the Node.js server.
+- API routes and request/response formats remain unchanged for compatibility.
+
+Refer to the updated project structure and instructions for running the Node.js server.
+
+
