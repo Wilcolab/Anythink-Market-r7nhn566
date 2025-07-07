@@ -1,7 +1,9 @@
-FROM node:18-alpine
+FROM node:14
+
 WORKDIR /app
-COPY package.json ./
-RUN npm install
-COPY . .
+
+COPY package*.json /app
+RUN yarn install
 EXPOSE 8001
-CMD ["npm", "start"]
+
+CMD [ "yarn", "start" ]
