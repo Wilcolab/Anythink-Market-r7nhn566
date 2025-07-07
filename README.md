@@ -44,7 +44,9 @@ We have migrated the backend server from Python (FastAPI) to Node.js using Expre
 
 - The server code now resides in `node-server/src/index.js`.
 - Dependencies are managed via `node-server/package.json`.
-- The Docker setup and `docker-compose.yml` have been updated to use the Node.js server.
+- The Docker setup and `docker-compose.yml` have been updated to use the Node.js 
+server.
+- The Node.js server should now be running. You can access at port `8001`.
 - API routes and request/response formats remain unchanged for compatibility.
 
 Refer to the updated project structure and instructions for running the Node.js server.
